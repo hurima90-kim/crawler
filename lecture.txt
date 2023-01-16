@@ -1,2 +1,0 @@
-csv(comma separated value)
-    - , 와 줄바꿈으로 구분된 값
