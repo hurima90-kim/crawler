@@ -1,0 +1,1991 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- BusinessLicenseInfo - START -->
+
+        <link
+            href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/plugin/BusinessLicenseInfo/style.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <script>
+            function switchFold(entryId) {
+                var businessLayer = document.getElementById(
+                    'businessInfoLayer_' + entryId
+                );
+
+                if (businessLayer) {
+                    if (businessLayer.className.indexOf('unfold_license') > 0) {
+                        businessLayer.className = 'business_license_layer';
+                    } else {
+                        businessLayer.className =
+                            'business_license_layer unfold_license';
+                    }
+                }
+            }
+        </script>
+
+        <!-- BusinessLicenseInfo - END -->
+        <!-- DaumShow - START -->
+        <style type="text/css">
+            #daumSearchBox {
+                height: 21px;
+                background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+                margin: 5px auto;
+                padding: 0;
+            }
+
+            #daumSearchBox input {
+                background: none;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            #daumSearchBox #daumLogo {
+                width: 34px;
+                height: 21px;
+                float: left;
+                margin-right: 5px;
+                background-image: url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
+            }
+
+            #daumSearchBox #show_q {
+                background-color: transparent;
+                border: none;
+                font: 12px Gulim, Sans-serif;
+                color: #555;
+                margin-top: 4px;
+                margin-right: 15px;
+                float: left;
+            }
+
+            #daumSearchBox #show_btn {
+                background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+                width: 37px;
+                height: 21px;
+                float: left;
+                margin: 0;
+                cursor: pointer;
+                text-indent: -1000em;
+            }
+        </style>
+
+        <!-- DaumShow - END -->
+
+        <!-- System - START -->
+
+        <!-- System - END -->
+
+        <!-- TistoryProfileLayer - START -->
+        <link
+            href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/plugin/TistoryProfileLayer/style.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script
+            type="text/javascript"
+            src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/plugin/TistoryProfileLayer/script.js"
+        ></script>
+
+        <!-- TistoryProfileLayer - END -->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="format-detection" content="telephone=no" />
+        <script
+            src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="//t1.daumcdn.net/tistory_admin/lib/lightbox/js/lightbox-v2.10.0.min.js"
+            defer
+        ></script>
+        <script
+            type="text/javascript"
+            src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"
+        ></script>
+        <meta name="referrer" content="always" />
+        <meta
+            name="google-adsense-platform-account"
+            content="ca-host-pub-9691043933427338"
+        />
+        <meta name="google-adsense-platform-domain" content="tistory.com" />
+        <meta name="google-adsense-account" content="ca-pub-4209296396265842" />
+        <meta name="description" content="세상에서 가장 쉬운 코딩" />
+
+        <!-- BEGIN OPENGRAPH -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nadocoding.tistory.com" />
+        <meta property="og:site_name" content="나도코딩" />
+        <meta property="og:title" content="나도코딩" />
+        <meta property="og:description" content="세상에서 가장 쉬운 코딩" />
+        <meta
+            property="og:image"
+            content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F3885386%2Fattach%2F49e5d353d6754db29d4f3c4a9645a194"
+        />
+        <meta property="og:article:author" content="'나도코딩'" />
+        <!-- END OPENGRAPH -->
+
+        <!-- BEGIN TWITTERCARD -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@TISTORY" />
+        <meta name="twitter:title" content="나도코딩" />
+        <meta name="twitter:description" content="세상에서 가장 쉬운 코딩" />
+        <meta
+            property="twitter:image"
+            content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F3885386%2Fattach%2F49e5d353d6754db29d4f3c4a9645a194"
+        />
+        <!-- END TWITTERCARD -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://t1.daumcdn.net/tistory_admin/lib/lightbox/css/lightbox.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/style/font.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/style/content.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/style/uselessPMargin.css"
+        />
+        <script type="text/javascript">
+            (function () {
+                var tjQuery = jQuery.noConflict(true);
+                window.tjQuery = tjQuery;
+                window.orgjQuery = window.jQuery;
+                window.jQuery = tjQuery;
+                window.jQuery = window.orgjQuery;
+                delete window.orgjQuery;
+            })();
+        </script>
+        <script
+            type="text/javascript"
+            src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/script/base.js"
+        ></script>
+        <script type="text/javascript">
+            if (!window.T) {
+                window.T = {};
+            }
+            window.T.config = {
+                TOP_SSL_URL: 'https://www.tistory.com',
+                PREVIEW: false,
+                ROLE: 'guest',
+                PREV_PAGE: '',
+                NEXT_PAGE: '',
+                BLOG: {
+                    id: 3885386,
+                    name: 'nadocoding',
+                    title: '나도코딩',
+                    isDormancy: false,
+                },
+                NEED_COMMENT_LOGIN: false,
+                COMMENT_LOGIN_CONFIRM_MESSAGE: '',
+                LOGIN_URL:
+                    'https://www.tistory.com/auth/login/?redirectUrl=http%3A%2F%2Fnadocoding.tistory.com%2F',
+                DEFAULT_URL: 'https://nadocoding.tistory.com',
+                USER: { name: null, homepage: null },
+                SUBSCRIPTION: {
+                    status: 'none',
+                    isConnected: false,
+                    isPending: false,
+                    isWait: false,
+                    isProcessing: false,
+                    isNone: true,
+                },
+                IS_LOGIN: false,
+                HAS_BLOG: false,
+                TOP_URL: 'http://www.tistory.com',
+                JOIN_URL: 'https://www.tistory.com/member/join',
+                ROLE_GROUP: 'visitor',
+            };
+            window.appInfo = {
+                domain: 'tistory.com',
+                topUrl: 'https://www.tistory.com',
+                loginUrl: 'https://www.tistory.com/auth/login',
+                logoutUrl: 'https://www.tistory.com/auth/logout',
+            };
+            window.initData = {};
+
+            window.TistoryBlog = {
+                basePath: '',
+                url: 'https://nadocoding.tistory.com',
+                tistoryUrl: 'https://nadocoding.tistory.com',
+                manageUrl: 'https://nadocoding.tistory.com/manage',
+                token: 'V8vVE+va+G1x5+EEAThiaFdD+HpS9KQsMmE6cTyhgireR/gPMUmm6cnijRQ9IWsl',
+            };
+            var servicePath = '';
+            var blogURL = '';
+        </script>
+        <script
+            type="text/javascript"
+            src="//developers.kakao.com/sdk/js/kakao.min.js"
+        ></script>
+
+        <script
+            data-ad-client="ca-pub-4209296396265842"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+        <meta
+            name="google-site-verification"
+            content="BASDhUO1niAH8Xq_z2715hNcODwSuyzkzzB3FslYp38"
+        />
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+        />
+        <title>나도코딩</title>
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="나도코딩"
+            href="https://nadocoding.tistory.com/rss"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://tistory1.daumcdn.net/tistory/3885386/skin/style.css?_version_=1630791781"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tistory1.daumcdn.net/tistory/3885386/skin/images/font.css?_version_=1630791781"
+        />
+
+        <!--[if lt IE 9]>
+            <script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+        <script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script>
+        <!--<![endif]-->
+
+        <style type="text/css">
+            .another_category {
+                border: 1px solid #e5e5e5;
+                padding: 10px 10px 5px;
+                margin: 10px 0;
+                clear: both;
+            }
+
+            .another_category h4 {
+                font-size: 12px !important;
+                margin: 0 !important;
+                border-bottom: 1px solid #e5e5e5 !important;
+                padding: 2px 0 6px !important;
+            }
+
+            .another_category h4 a {
+                font-weight: bold !important;
+            }
+
+            .another_category table {
+                table-layout: fixed;
+                border-collapse: collapse;
+                width: 100% !important;
+                margin-top: 10px !important;
+            }
+
+            * html .another_category table {
+                width: auto !important;
+            }
+
+            *:first-child + html .another_category table {
+                width: auto !important;
+            }
+
+            .another_category th,
+            .another_category td {
+                padding: 0 0 4px !important;
+            }
+
+            .another_category th {
+                text-align: left;
+                font-size: 12px !important;
+                font-weight: normal;
+                word-break: break-all;
+                overflow: hidden;
+                line-height: 1.5;
+            }
+
+            .another_category td {
+                text-align: right;
+                width: 80px;
+                font-size: 11px;
+            }
+
+            .another_category th a {
+                font-weight: normal;
+                text-decoration: none;
+                border: none !important;
+            }
+
+            .another_category th a.current {
+                font-weight: bold;
+                text-decoration: none !important;
+                border-bottom: 1px solid !important;
+            }
+
+            .another_category th span {
+                font-weight: normal;
+                text-decoration: none;
+                font: 10px Tahoma, Sans-serif;
+                border: none !important;
+            }
+
+            .another_category_color_gray,
+            .another_category_color_gray h4 {
+                border-color: #e5e5e5 !important;
+            }
+
+            .another_category_color_gray * {
+                color: #909090 !important;
+            }
+
+            .another_category_color_gray th a.current {
+                border-color: #909090 !important;
+            }
+
+            .another_category_color_gray h4,
+            .another_category_color_gray h4 a {
+                color: #737373 !important;
+            }
+
+            .another_category_color_red,
+            .another_category_color_red h4 {
+                border-color: #f6d4d3 !important;
+            }
+
+            .another_category_color_red * {
+                color: #e86869 !important;
+            }
+
+            .another_category_color_red th a.current {
+                border-color: #e86869 !important;
+            }
+
+            .another_category_color_red h4,
+            .another_category_color_red h4 a {
+                color: #ed0908 !important;
+            }
+
+            .another_category_color_green,
+            .another_category_color_green h4 {
+                border-color: #cce7c8 !important;
+            }
+
+            .another_category_color_green * {
+                color: #64c05b !important;
+            }
+
+            .another_category_color_green th a.current {
+                border-color: #64c05b !important;
+            }
+
+            .another_category_color_green h4,
+            .another_category_color_green h4 a {
+                color: #3ea731 !important;
+            }
+
+            .another_category_color_blue,
+            .another_category_color_blue h4 {
+                border-color: #c8daf2 !important;
+            }
+
+            .another_category_color_blue * {
+                color: #477fd6 !important;
+            }
+
+            .another_category_color_blue th a.current {
+                border-color: #477fd6 !important;
+            }
+
+            .another_category_color_blue h4,
+            .another_category_color_blue h4 a {
+                color: #1960ca !important;
+            }
+
+            .another_category_color_violet,
+            .another_category_color_violet h4 {
+                border-color: #e1ceec !important;
+            }
+
+            .another_category_color_violet * {
+                color: #9d64c5 !important;
+            }
+
+            .another_category_color_violet th a.current {
+                border-color: #9d64c5 !important;
+            }
+
+            .another_category_color_violet h4,
+            .another_category_color_violet h4 a {
+                color: #7e2cb5 !important;
+            }
+        </style>
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/style/dialog.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//t1.daumcdn.net/tistory_admin/www/style/top/font.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/style/postBtn.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/style/tistory.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/style/revenue.css"
+        />
+        <link rel="canonical" href="https://nadocoding.tistory.com" />
+
+        <!-- BEGIN STRUCTURED_DATA -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "WebSite",
+                "url": "/",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "/search/{search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            }
+        </script>
+        <!-- END STRUCTURED_DATA -->
+        <script
+            type="text/javascript"
+            src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/script/common.js"
+        ></script>
+    </head>
+
+    <body id="tt-body-index">
+        <div id="dkIndex">
+            <a href="#dkBody">본문 바로가기</a>
+            <a href="#dkGnb">메뉴 바로가기</a>
+        </div>
+
+        <div id="dkWrap" class="wrap_skin">
+            <div id="dkHead" role="banner" class="area_head">
+                <h1 class="screen_out">나도코딩</h1>
+                <div class="area_profile">
+                    <a class="link_profile" href="/"
+                        ><img
+                            src="https://tistory1.daumcdn.net/tistory/3885386/attach/49e5d353d6754db29d4f3c4a9645a194"
+                            width="50"
+                            height="50"
+                            class="img_profile"
+                            alt="프로필사진"
+                    /></a>
+                    <div class="info_profile">
+                        <button type="button" class="btn_name">
+                            나도코딩
+                            <span class="ico_skin ico_name"></span>
+                        </button>
+                        <ul class="list_name">
+                            <li>
+                                <a
+                                    href="https://nadocoding.tistory.com/manage/entry/post"
+                                    class="link_name"
+                                    >글쓰기</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://nadocoding.tistory.com/manage"
+                                    class="link_name"
+                                    >관리</a
+                                >
+                            </li>
+                            <li class="box_division">
+                                <a
+                                    href="https://nadocoding.tistory.com/tag"
+                                    class="link_name"
+                                    >태그</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://nadocoding.tistory.com/guestbook"
+                                    class="link_name"
+                                    >방명록</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://nadocoding.tistory.com/rss"
+                                    class="link_name"
+                                    >RSS</a
+                                >
+                            </li>
+                        </ul>
+                        <p class="txt_condition">나도코딩</p>
+                    </div>
+                </div>
+
+                <button type="button" class="btn_menu">
+                    <span class="ico_skin ico_menu">카테고리 메뉴열기</span>
+                </button>
+            </div>
+
+            <div class="dimmed_layer"></div>
+
+            <button type="button" class="btn_close">
+                <span class="ico_skin ico_close">닫기</span>
+            </button>
+
+            <div class="area_menu">
+                <div class="area_search">
+                    <button type="button" class="btn_search">
+                        <span class="ico_skin ico_search">검색하기</span>
+                    </button>
+                    <form
+                        action="#"
+                        method="get"
+                        class="frm_search"
+                        onsubmit="try {
+    window.location.href = '/search' + '/' + looseURIEncode(document.getElementsByName('search')[0].value);
+    document.getElementsByName('search')[0].value = '';
+    return false;
+} catch (e) {}"
+                    >
+                        <fieldset>
+                            <legend class="screen_out">검색하기 폼</legend>
+                            <label for="tfSearch" class="ico_skin lab_search"
+                                >검색하기</label
+                            >
+                            <input
+                                type="text"
+                                name="search"
+                                value=""
+                                class="tf_search"
+                            />
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div role="navigation" class="area_navi">
+                    <button type="button" class="btn_cate">
+                        CATEGORY <span class="ico_skin ico_cate"></span>
+                    </button>
+
+                    <div class="list_cate">
+                        <ul class="tt_category">
+                            <li class="">
+                                <a href="/category" class="link_tit">
+                                    분류 전체보기
+                                    <span class="c_cnt">(99)</span>
+                                </a>
+                                <ul class="category_list">
+                                    <li class="">
+                                        <a
+                                            href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98"
+                                            class="link_item"
+                                        >
+                                            파이썬 강의
+                                            <span class="c_cnt">(93)</span>
+                                        </a>
+                                        <ul class="sub_category_list">
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EA%B8%B0%EB%B3%B8%ED%8E%B8"
+                                                    class="link_sub_item"
+                                                >
+                                                    기본편
+                                                    <span class="c_cnt"
+                                                        >(74)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/1%EB%B6%84%20%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%28%EB%B3%B5%EC%8A%B5%EC%9A%A9%29"
+                                                    class="link_sub_item"
+                                                >
+                                                    1분 파이썬 (복습용)
+                                                    <span class="c_cnt"
+                                                        >(1)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EC%8B%A4%EB%A0%A5%ED%96%A5%EC%83%81%20%ED%80%B4%EC%A6%88"
+                                                    class="link_sub_item"
+                                                >
+                                                    실력향상 퀴즈
+                                                    <span class="c_cnt"
+                                                        >(3)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EC%8B%A4%EC%A0%84%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"
+                                                    class="link_sub_item"
+                                                >
+                                                    실전 프로젝트
+                                                    <span class="c_cnt"
+                                                        >(5)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EC%9C%A0%EC%9A%A9%ED%95%9C%20%EB%8B%A8%ED%8E%B8%20%EA%B0%95%EC%9D%98"
+                                                    class="link_sub_item"
+                                                >
+                                                    유용한 단편 강의
+                                                    <span class="c_cnt"
+                                                        >(0)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%ED%99%9C%EC%9A%A9%ED%8E%B81%20-%20%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C"
+                                                    class="link_sub_item"
+                                                >
+                                                    활용편1 - 게임개발
+                                                    <span class="c_cnt"
+                                                        >(1)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%ED%99%9C%EC%9A%A9%ED%8E%B82%20-%20GUI%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"
+                                                    class="link_sub_item"
+                                                >
+                                                    활용편2 - GUI프로그래밍
+                                                    <span class="c_cnt"
+                                                        >(1)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%ED%99%9C%EC%9A%A9%ED%8E%B83%20-%20%EC%9B%B9%EC%8A%A4%ED%81%AC%EB%9E%98%ED%95%91"
+                                                    class="link_sub_item"
+                                                >
+                                                    활용편3 - 웹스크래핑
+                                                    <span class="c_cnt"
+                                                        >(1)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%ED%99%9C%EC%9A%A9%ED%8E%B84%20-%20%EC%97%85%EB%AC%B4%EC%9E%90%EB%8F%99%ED%99%94"
+                                                    class="link_sub_item"
+                                                >
+                                                    활용편4 - 업무자동화
+                                                    <span class="c_cnt"
+                                                        >(1)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%ED%99%9C%EC%9A%A9%ED%8E%B85%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%20%EB%B0%8F%20%EC%8B%9C%EA%B0%81%ED%99%94"
+                                                    class="link_sub_item"
+                                                >
+                                                    활용편5 - 데이터분석 및
+                                                    시각화
+                                                    <span class="c_cnt"
+                                                        >(1)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%ED%99%9C%EC%9A%A9%ED%8E%B86%20-%20%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D"
+                                                    class="link_sub_item"
+                                                >
+                                                    활용편6 - 얼굴인식
+                                                    <span class="c_cnt"
+                                                        >(1)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%ED%99%9C%EC%9A%A9%ED%8E%B87%20-%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D"
+                                                    class="link_sub_item"
+                                                >
+                                                    활용편7 - 머신러닝
+                                                    <span class="c_cnt"
+                                                        >(1)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%ED%99%9C%EC%9A%A9%ED%8E%B88%20-%20%EC%82%AC%EB%AC%BC%EC%9D%B8%ED%84%B0%EB%84%B7"
+                                                    class="link_sub_item"
+                                                >
+                                                    활용편8 - 사물인터넷
+                                                    <span class="c_cnt"
+                                                        >(0)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a
+                                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EC%9E%90%EC%A3%BC%20%EB%AC%BB%EB%8A%94%20%EC%A7%88%EB%AC%B8"
+                                                    class="link_sub_item"
+                                                >
+                                                    자주 묻는 질문
+                                                    <span class="c_cnt"
+                                                        >(3)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="/category/C%20%EA%B0%95%EC%9D%98"
+                                            class="link_item"
+                                        >
+                                            C 강의
+                                            <span class="c_cnt">(4)</span>
+                                        </a>
+                                        <ul class="sub_category_list">
+                                            <li class="">
+                                                <a
+                                                    href="/category/C%20%EA%B0%95%EC%9D%98/%EC%9E%85%EB%AC%B8%ED%8E%B8"
+                                                    class="link_sub_item"
+                                                >
+                                                    입문편
+                                                    <span class="c_cnt"
+                                                        >(4)</span
+                                                    >
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="/category/Java%20%EA%B0%95%EC%9D%98"
+                                            class="link_item"
+                                        >
+                                            Java 강의
+                                            <span class="c_cnt">(1)</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="/category/Unity%20%EA%B0%95%EC%9D%98"
+                                            class="link_item"
+                                        >
+                                            Unity 강의
+                                            <span class="c_cnt">(1)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="menu_profile">
+                            <li>
+                                <a
+                                    href="https://nadocoding.tistory.com/guestbook"
+                                    >방명록</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hide" />
+
+            <div class="area_list">
+                <div class="tit_category">
+                    <a class="link_category">전체 글 (99)</a>
+                </div>
+            </div>
+
+            <div id="dkContent" class="cont_skin" role="main">
+                <div id="cMain">
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/102" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/NRwyg/btrV6dC0W14/s75sK6WGuCbPnia2mgqe6K/img.png"
+                            /></a>
+
+                            <a href="/102" class="link_post">
+                                <strong class="tit_post"
+                                    >파이썬 개발 환경설정 - 파이참
+                                    (PyCharm)</strong
+                                >
+                                <p class="txt_post">
+                                    파이썬 개발 환경설정 - 파이참 (PyCharm)
+                                    편입니다. ※ 본 포스팅은 윈도우 10 기준으로
+                                    작성되었습니다. ※ 파이썬 설치는 아래 링크를
+                                    참고해주세요. 👉
+                                    https://nadocoding.tistory.com/4 [파이썬
+                                    기본편] 1-2.환경설정 환경설정 파이썬 개발을
+                                    위해 가장 먼저 해야 하는 작업, 바로
+                                    환경설정을 진행합니다. 파이썬 설치 1. 공식
+                                    홈페이지(https://www.python.org/downloads)에
+                                    접속합니다. 2. Downloads > All releases 를
+                                    클릭한 후 nadocoding.tistory.com 1. 공식
+                                    홈페이지(https://www.jetbrains.com/ko-kr/pycharm/)
+                                    에 접속 후 다운로드 버튼을 클릭합니다. 2. PC
+                                    환경에 맞는..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EA%B8%B0%EB%B3%B8%ED%8E%B8"
+                                    class="link_cate"
+                                    >파이썬 강의/기본편</a
+                                >
+                                <span class="txt_bar"></span>
+                                2023. 1. 13. 07:56
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/107" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/wiKJR/btrUQbAiuFZ/LJnFCxCDclQbHBxKxGwuM0/img.png"
+                            /></a>
+
+                            <a href="/107" class="link_post">
+                                <strong class="tit_post"
+                                    >유니티 게임 프로그래밍 100강사전</strong
+                                >
+                                <p class="txt_post">
+                                    안녕하세요? 나도코딩입니다. 유니티를 이용한
+                                    게임 개발 프로그래밍 강의를 제작하고
+                                    있습니다. 유니티는 전세계적으로 정말 많은
+                                    개발자분들이 사용하고 있는 게임 엔진인데요.
+                                    2D, 3D 는 물론 VR, AR 게임까지도 편리하게
+                                    개발할 수 있어서 많은 사랑을 받고 있습니다.
+                                    유니티에는 게임에 필요한 많은 요소들이 이미
+                                    준비되어 있기 때문에 프로그래밍 지식이 없는
+                                    비전공자분들도 코딩의 기본만 배우고 툴
+                                    사용법을 익히고 나면 어느 정도의 게임은 금방
+                                    만들 수 있지요. 과거에 다른 엔진으로 게임을
+                                    개발했던 입장에서는 '이렇게 쉬워도 되나..🙄'
+                                    하는 생각마저 들게 합니다. 또한 디자인을 잘
+                                    하지 못하는 사람도 이미지나 사운드 등 다양한
+                                    게임 관련 리소스가 제공되는 에셋(Asset,
+                                    유/무료) 스토어가 있기 때문에,..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/Unity%20%EA%B0%95%EC%9D%98"
+                                    class="link_cate"
+                                    >Unity 강의</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 12. 30. 14:00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/106" class="link_post">
+                                <strong class="tit_post"
+                                    >자바 기본편 강의</strong
+                                >
+                                <p class="txt_post">
+                                    자바 기본편 강의 제작이 완료되었습니다 ✨
+                                    모든 것이 클래스로 이루어져있는 자바는
+                                    🎓객체지향 프로그래밍을 익히기에 특히 좋은
+                                    언어인데요. 기본편 공부를 마치고 나면
+                                    취업시장에서 정말 수요가 많은 웹개발 쪽으로
+                                    진로를 고려할 수 있으며 모바일 앱 개발도
+                                    도전해볼 수 있습니다. 그 외에도 다양한
+                                    활용처가 있는데 각각 추가적인 학습이
+                                    필요하지만 우선 선수 지식은 쌓게 되는 것이죠
+                                    👨‍🏫 자바는 파이썬에 비해서는 배울 내용이 많고
+                                    학습하기에 마냥 쉽지만은 않아요 😵 하지만
+                                    개발자가 되기로 마음을 먹으셨다면 자바
+                                    공부를 한 번쯤은 꼭 해두시라고 권해드립니다.
+                                    언젠가 분명히 도움이 되실 거예요 🌱 나도코딩
+                                    자바 기본편 강의는 총 20시간 분량으로
+                                    제작되었으며 대부분의 자바 교재에서 다루는
+                                    내용은 모두 포함하였습니다..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/Java%20%EA%B0%95%EC%9D%98"
+                                    class="link_cate"
+                                    >Java 강의</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 12. 29. 13:00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/105" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/b9SQ9u/btrWagT6rxu/HK4KtTeNPrrkUvgPZ3Ngxk/img.png"
+                            /></a>
+
+                            <a href="/105" class="link_post">
+                                <strong class="tit_post"
+                                    >파이썬 개발 환경설정 - 구글 코랩 (Google
+                                    Colab)</strong
+                                >
+                                <p class="txt_post">
+                                    파이썬 개발 환경설정 - 구글 코랩 (Google
+                                    Colab) 편입니다. 코랩을 이용하면 컴퓨터에
+                                    별도의 프로그램 설치 없이 브라우저 상에서
+                                    개발이 가능합니다. 구글에서 제공해주는
+                                    고성능 자원을 통해 머신러닝, 데이터 분석,
+                                    교육 등으로 활용됩니다. 단, 무료 버전으로는
+                                    하루 최대 12시간, 노트는 한 번에 최대
+                                    5개까지만 사용할 수 있습니다. 1. 공식
+                                    홈페이지(https://colab.research.google.com/)에
+                                    접속합니다. 2. 목차 내 항목들을 클릭하면
+                                    주제별 튜토리얼을 확인할 수 있습니다. 3.
+                                    파일 메뉴에서 새 노트를 클릭합니다. 로그인
+                                    되지 않은 경우 구글 계정으로 로그인합니다.
+                                    4. 제목 부분을 클릭하여 원하는 이름(예:
+                                    HelloWorld.ipynb) 으로 수정합니다. 5. ..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EA%B8%B0%EB%B3%B8%ED%8E%B8"
+                                    class="link_cate"
+                                    >파이썬 강의/기본편</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 12. 23. 09:16
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/104" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/cR8Tal/btrWcbYubNf/SlJZvn4FWNicNWRSyrpOr1/img.png"
+                            /></a>
+
+                            <a href="/104" class="link_post">
+                                <strong class="tit_post"
+                                    >파이썬 개발 환경설정 - 주피터 노트북
+                                    (Jupyter Notebook)</strong
+                                >
+                                <p class="txt_post">
+                                    파이썬 개발 환경설정 - 주피터 노트북
+                                    (Jupyter Notebook) 편입니다. ※ 본 포스팅은
+                                    윈도우 10 기준으로 작성되었습니다. 주피터
+                                    노트북은 아나콘다 (Anaconda) 를 설치하면
+                                    자동으로 설치가 되는데요. 아나콘다는 데이터
+                                    과학, 빅데이터 처리, 머신러닝 분석 등을 위한
+                                    수많은 패키지들(Numpy, Pandas 등) 이
+                                    기본적으로 포함되어 있는 유명한 파이썬
+                                    배포판입니다. 1. 공식
+                                    홈페이지(https://www.anaconda.com/) 에
+                                    방문하여 Download 버튼을 클릭합니다. 2.
+                                    다운로드 완료된 설치 파일을 실행하고, Next
+                                    버튼을 클릭합니다. 3. 라이센스 동의 화면에서
+                                    I Agree 버튼을 클릭합니다. 4. 설치 타입은
+                                    Just Me 로 하고 Next 를 클릭합니다. 5..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EA%B8%B0%EB%B3%B8%ED%8E%B8"
+                                    class="link_cate"
+                                    >파이썬 강의/기본편</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 12. 23. 09:15
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/103" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/oDndj/btrV74l8VzQ/BDLismvLYrpIssjfhOKJj0/img.png"
+                            /></a>
+
+                            <a href="/103" class="link_post">
+                                <strong class="tit_post"
+                                    >파이썬 개발 환경설정 - Repl.it</strong
+                                >
+                                <p class="txt_post">
+                                    파이썬 개발 환경설정 - Repl.it 편입니다.
+                                    Repl.it 을 이용하면 컴퓨터에 별도의 프로그램
+                                    설치 없이 브라우저 상에서 개발이 가능합니다.
+                                    1. 공식 홈페이지(https://replit.com/) 에
+                                    접속 후 Start creating 버튼을 클릭합니다. 2.
+                                    새로운 계정을 생성하거나 SNS 계정을 이용하여
+                                    회원가입 및 로그인합니다. 3. 프로그래밍
+                                    경험을 묻는 화면에서 적합한 항목을
+                                    선택합니다. 저는 Skip 을 누르도록
+                                    하겠습니다. 4. 튜토리얼을 확인할지 물어보는
+                                    화면입니다. 궁금하신 경우 튜토리얼을 보셔도
+                                    되며, 저는 Skip 을 누르겠습니다. 5.
+                                    시작화면에서 Code 버튼을 클릭합니다. 6.
+                                    개발을 원하는 프로그래밍 언어(예: 파이썬) 를
+                                    선택하고 제목(예: Hello World) 을..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EA%B8%B0%EB%B3%B8%ED%8E%B8"
+                                    class="link_cate"
+                                    >파이썬 강의/기본편</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 12. 23. 09:13
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/101" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/cgi8BL/btrTFbnvAor/KewON9VZ3rIRcIURHJCkfK/img.gif"
+                            /></a>
+
+                            <a href="/101" class="link_post">
+                                <strong class="tit_post"
+                                    >Mac 에서 파이썬 개발 환경설정</strong
+                                >
+                                <p class="txt_post">
+                                    Mac 에서 Visual Studio Code 를 통해 파이썬
+                                    개발 환경설정을 할 수 있습니다. ※ 본
+                                    포스팅은 M1 칩 기준으로 작성되었습니다. Mac
+                                    에서 파이썬 및 Visual Studio Code 등의
+                                    프로그램은 홈페이지에서 직접 다운로드 받아서
+                                    설치할 수도 있지만 효율적으로 프로그램의
+                                    수정, 삭제, 업데이트를 관리하기 위해
+                                    Homebrew 를 이용하여 설치하는 방법을
+                                    권해드립니다. 1. Homebrew 설치 1. 터미널에서
+                                    다음 명령을 입력합니다. /bin/bash -c "$(curl
+                                    -fsSL
+                                    https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+                                    2. password 를 입력하고 Enter 를 입력해서
+                                    설치를 진행합니다. 3..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EA%B8%B0%EB%B3%B8%ED%8E%B8"
+                                    class="link_cate"
+                                    >파이썬 강의/기본편</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 12. 15. 10:32
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/100" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/x0R4z/btrNcYaut0o/uRKLmavPKksomd4FApafAk/img.png"
+                            /></a>
+
+                            <a href="/100" class="link_post">
+                                <strong class="tit_post"
+                                    >코딩 자율학습 나도코딩의 C 언어
+                                    입문</strong
+                                >
+                                <p class="txt_post">
+                                    유튜브에서 135만 조회수를 달성중인 '나도코딩
+                                    C 언어' 강의가 책으로 만들어졌습니다. C
+                                    언어는 TIOBE 프로그래밍 인기 순위에서
+                                    상위권에 있으며, 국내 대학의 많은 컴퓨터
+                                    관련 학과에서 첫 프로그래밍 언어로 선택되고
+                                    있어요. C 언어는 다른 언어에 비해 조금?
+                                    어려운 편인데요. ... 조금 많이? 어려운
+                                    편인데요 ... 파이썬이 빠르게 배워서 다양하게
+                                    활용할 수 있는 장점이 있다면, C 언어는
+                                    시간이 조금 걸리더라도 차근차근 공부하다
+                                    보면 프로그래밍 실력을 깊이 있게 쌓을 수
+                                    있습니다. 그러고 나면 탄탄한 기초에 힘입어
+                                    다른 프로그래밍 언어는 보다 쉽게 습득이
+                                    가능하지요. 요즘 자동차는 정말 편리합니다.
+                                    승용차의 경우 기어 변속도 대부분 자동이고,
+                                    주차를 할 때는 사방에 설치된 카메라와 센서가
+                                    도..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/C%20%EA%B0%95%EC%9D%98/%EC%9E%85%EB%AC%B8%ED%8E%B8"
+                                    class="link_cate"
+                                    >C 강의/입문편</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 9. 28. 20:00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/99" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/bm2bPR/btrKpDs6bm7/Hxvt9BOBet87Nw0KlIkBW0/img.jpg"
+                            /></a>
+
+                            <a href="/99" class="link_post">
+                                <strong class="tit_post"
+                                    >[파이썬] 주식정보 시총순으로
+                                    크롤링하기</strong
+                                >
+                                <p class="txt_post">
+                                    주식으로 1억을 만드는 방법은 2억으로
+                                    시작하는 거라는 말이 있습니다. 그만큼
+                                    투자라는 게 마냥 쉽고 달콤하지만은 않다는
+                                    것일텐데요. 주변에서 '카더라' 라는 말만
+                                    듣고, 또는 인터넷 방송 등에서 콕 찝어주는
+                                    종목만 아무것도 모른 채 매수를 하기보다는
+                                    최소한의 정보를 가지고 나름의 분석을 통해
+                                    거래를 하는 것이 반드시 필요하다고 봅니다.
+                                    (물론 그런다고 해서 수익이 발생한다는 보장은
+                                    절대 못합니다 ㅠㅠ) 아마 많은 분들이 N 사의
+                                    금융 페이지에서 주식 정보를 얻으실 텐데요.
+                                    저는 사실 주식 바보라서 어떻게 투자하시라고
+                                    말씀은 드리지 못하지만, 그나마 코스피 상위
+                                    종목의 우량주들 중에서 몇 개 종목을
+                                    선택하는게 들쑬날쑥한 동전주들보다는
+                                    안전하지 않을까 생각합니다. 페이지 좌측의
+                                    시가총액 메뉴를 이용하면 대..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EC%8B%A4%EC%A0%84%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"
+                                    class="link_cate"
+                                    >파이썬 강의/실전 프로젝트</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 8. 24. 10:59
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/97" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/oRise/btrKoUhZHkw/v85ahmlinWOHannmYum41K/img.jpg"
+                            /></a>
+
+                            <a href="/97" class="link_post">
+                                <strong class="tit_post"
+                                    >[파이썬] 틀린그림찾기 자동으로 하기</strong
+                                >
+                                <p class="txt_post">
+                                    집 주변에 오락실이 하나 있어서 가끔
+                                    틀린그림찾기 게임을 하곤 합니다. 그런데
+                                    난이도 설정을 어떻게 했는지.. 할 때마다 너무
+                                    어렵게 느껴지는거에요 ㅠㅠ 승부욕에 괜히
+                                    매직아이로 문제를 풀곤 하는데 게임을 하고
+                                    나면 눈이 그렇게 아플 수가 없습니다. 하고
+                                    나서도 이게 뭐하는건가 싶고요 ㅋㅋ
+                                    열받아서(?) 파이썬으로 자동화 프로그램을
+                                    만들어봤습니다. 그래봤자 오락실에서 써먹지는
+                                    못하겠지만 집에서라도 대리만족을 ^^;;
+                                    사용하는 패키지는 3개이며 용도는 이렇습니다.
+                                    1. Pillow : 원본 이미지와 대상 이미지의 비교
+                                    (틀린 부분 딱 나옴) 2. OpenCV : 틀린 부분의
+                                    외곽 검출 (어디를 클릭해야 할지 알 수 있음)
+                                    3. pyautogui : 자동으로 클릭하기 먼저 이미지
+                                    비교를 위해서 틀린그림찾기 ..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%95%EC%9D%98/%EC%8B%A4%EC%A0%84%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"
+                                    class="link_cate"
+                                    >파이썬 강의/실전 프로젝트</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 8. 24. 09:41
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/96" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/HJoWZ/btrIt5lHGzr/9r8jPHUe1YU7Es6PMwAuuK/img.jpg"
+                            /></a>
+
+                            <a href="/96" class="link_post">
+                                <strong class="tit_post"
+                                    >C 언어 프로그래밍 입문 (Mac 용 소스코드
+                                    포함)</strong
+                                >
+                                <p class="txt_post">
+                                    C 언어 프로그래밍 입문 강의입니다. 9 가지
+                                    게임을 만들며 재미있게 C 언어를 공부하실 수
+                                    있습니다. 소스 코드 (Mac) C 언어 강의에서
+                                    사용된 Windows 용 소스코드를 Mac 용으로
+                                    변환한 버전입니다. 환경 변화에 따른 일부
+                                    동작 방식의 변경이 있으니 참고해주세요. 강의
+                                    영상에서 제공되는 목차와 파일명(또는 순서)의
+                                    차이가 조금 있을 수 있습니다. 넓은 이해
+                                    부탁드립니다.
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/C%20%EA%B0%95%EC%9D%98/%EC%9E%85%EB%AC%B8%ED%8E%B8"
+                                    class="link_cate"
+                                    >C 강의/입문편</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 7. 30. 10:55
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mArticle" class="article_skin">
+                        <div class="list_content">
+                            <a href="/95" class="thumbnail_post"
+                                ><img
+                                    src="//i1.daumcdn.net/thumb/C148x148/?fname=https://blog.kakaocdn.net/dn/bUdO4E/btrIzFrPQFN/bG7bHBITtvkMRTLTJ4JL80/img.png"
+                            /></a>
+
+                            <a href="/95" class="link_post">
+                                <strong class="tit_post"
+                                    >Mac 에서 C 언어 개발 환경설정 (Visual
+                                    Studio Code)</strong
+                                >
+                                <p class="txt_post">
+                                    Mac 에서 Visual Studio Code 를 통해 C 언어
+                                    개발 환경설정을 할 수 있습니다. ※ 본
+                                    포스팅은 M1 칩 기준으로 작성되었습니다. 1.
+                                    Visual Studio Code 설치 Mac 에서 Visual
+                                    Studio Code 는 홈페이지에서 직접 다운로드
+                                    받아서 설치할 수도 있지만 효율적으로
+                                    프로그램의 수정, 삭제, 업데이트를 관리하기
+                                    위해 Homebrew 를 이용하여 설치하는 방법을
+                                    권해드립니다. (1) Homebrew 설치 터미널에서
+                                    다음 명령을 입력합니다. /bin/bash -c "$(curl
+                                    -fsSL
+                                    https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+                                    password 를 입력하고 Enter 를 입력해서
+                                    설치를 ..
+                                </p>
+                            </a>
+                            <div class="detail_info">
+                                <a
+                                    href="/category/C%20%EA%B0%95%EC%9D%98/%EC%9E%85%EB%AC%B8%ED%8E%B8"
+                                    class="link_cate"
+                                    >C 강의/입문편</a
+                                >
+                                <span class="txt_bar"></span>
+                                2022. 7. 30. 10:30
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area_paging area_paging_list">
+                        <span class="inner_paging">
+                            <a class="ico_skin link_prev no-more-prev">이전</a>
+
+                            <a href="/?page=1" class="link_page"
+                                ><span class="selected">1</span></a
+                            >
+
+                            <a href="/?page=2" class="link_page"
+                                ><span class="">2</span></a
+                            >
+
+                            <a href="/?page=3" class="link_page"
+                                ><span class="">3</span></a
+                            >
+
+                            <a href="/?page=4" class="link_page"
+                                ><span class="">4</span></a
+                            >
+
+                            <a class="link_page"><span class="">···</span></a>
+
+                            <a href="/?page=9" class="link_page"
+                                ><span class="">9</span></a
+                            >
+
+                            <a href="/?page=2" class="ico_skin link_next"
+                                >다음</a
+                            >
+                        </span>
+                    </div>
+
+                    <div class="area_paging area_paging_simple">
+                        <div class="inner_paging">
+                            <a class="link_prev no-more-prev">
+                                <span class="ico_skin ico_prev"></span>이전
+                            </a>
+
+                            <a href="/?page=2" class="link_next">
+                                다음<span class="ico_skin ico_next"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="mEtc" class="wrap_etc">
+                        <div class="inner_aside">
+                            <!-- 공지사항 -->
+
+                            <div class="box_aside">
+                                <strong>공지사항</strong>
+                                <ul class="list_board"></ul>
+                            </div>
+
+                            <!-- 최근에 올라온 글 -->
+                            <div class="box_aside">
+                                <strong>최근에 올라온 글</strong>
+                                <ul class="list_board">
+                                    <li>
+                                        <a href="/102" class="link_board"
+                                            >파이썬 개발 환경설정 - 파이참
+                                            (PyCharm)</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a href="/107" class="link_board"
+                                            >유니티 게임 프로그래밍 100강사전</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a href="/106" class="link_board"
+                                            >자바 기본편 강의</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a href="/105" class="link_board"
+                                            >파이썬 개발 환경설정 - 구글 코랩
+                                            (Google⋯</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 최근에 달린 댓글 -->
+                            <div class="box_aside">
+                                <strong>최근에 달린 댓글</strong>
+                                <ul class="list_board">
+                                    <li>
+                                        <a
+                                            href="/21#comment14710375"
+                                            class="link_board"
+                                            >from selenium import webdriver⋯</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/34#comment14706641"
+                                            class="link_board"
+                                            >link = &quot;http://naver.com&quot;
+                                            alf⋯</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/41#comment14692222"
+                                            class="link_board"
+                                            >if 문까지는 잘써지는데 elif
+                                            에서부터는 문법오⋯</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/16#comment14673498"
+                                            class="link_board"
+                                            >안녕하세요! 구글독스에서 점프투
+                                            파이썬을 보고 강의를 ⋯</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 방문자수 -->
+                            <div class="box_aside lst">
+                                <dl class="list_total">
+                                    <dt>Total</dt>
+                                    <dd>1,193,220</dd>
+                                </dl>
+                                <dl class="list_visitor">
+                                    <dt>Today</dt>
+                                    <dd>1,281</dd>
+                                </dl>
+                                <dl class="list_visitor">
+                                    <dt>Yesterday</dt>
+                                    <dd>1,464</dd>
+                                </dl>
+                            </div>
+
+                            <!-- 링크 -->
+                            <div class="box_aside">
+                                <strong>링크</strong>
+                                <ul class="list_board"></ul>
+                            </div>
+
+                            <!-- 태그 클라우드 -->
+                            <div class="box_aside">
+                                <strong>TAG</strong>
+                                <ul class="list_tag">
+                                    <li>
+                                        <a
+                                            href="/tag/Colab"
+                                            class="link_tag cloud5"
+                                            >Colab</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/pygame"
+                                            class="link_tag cloud5"
+                                            >pygame</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/%EC%A3%BC%ED%94%BC%ED%84%B0%EB%85%B8%ED%8A%B8%EB%B6%81"
+                                            class="link_tag cloud5"
+                                            >주피터노트북</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/%EB%82%98%EB%8F%84%EC%BD%94%EB%94%A9"
+                                            class="link_tag cloud3"
+                                            >나도코딩</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/%ED%8C%8C%EC%9D%B4%EC%8D%AC"
+                                            class="link_tag cloud1"
+                                            >파이썬</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/%EC%BD%94%EB%9E%A9"
+                                            class="link_tag cloud5"
+                                            >코랩</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/pycharm"
+                                            class="link_tag cloud5"
+                                            >pycharm</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/vscode"
+                                            class="link_tag cloud5"
+                                            >vscode</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/Mac"
+                                            class="link_tag cloud5"
+                                            >Mac</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95"
+                                            class="link_tag cloud4"
+                                            >환경설정</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/Xcode"
+                                            class="link_tag cloud5"
+                                            >Xcode</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/Visual%20Studio%20Code"
+                                            class="link_tag cloud5"
+                                            >Visual Studio Code</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/c%EC%96%B8%EC%96%B4"
+                                            class="link_tag cloud4"
+                                            >c언어</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/repl.it"
+                                            class="link_tag cloud5"
+                                            >repl.it</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/Tkinter"
+                                            class="link_tag cloud5"
+                                            >Tkinter</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/GUI"
+                                            class="link_tag cloud5"
+                                            >GUI</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/%ED%8C%8C%EC%9D%B4%EA%B2%8C%EC%9E%84"
+                                            class="link_tag cloud5"
+                                            >파이게임</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/%EB%B9%84%EC%A3%BC%EC%96%BC%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4%20%EC%BD%94%EB%93%9C"
+                                            class="link_tag cloud5"
+                                            >비주얼 스튜디오 코드</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/%ED%96%89%EB%A7%A8"
+                                            class="link_tag cloud5"
+                                            >행맨</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/tag/%EC%95%84%EB%82%98%EC%BD%98%EB%8B%A4"
+                                            class="link_tag cloud5"
+                                            >아나콘다</a
+                                        >
+                                    </li>
+                                </ul>
+                                <a
+                                    href="https://nadocoding.tistory.com/tag"
+                                    class="link_more"
+                                    >more</a
+                                >
+                            </div>
+
+                            <!-- 달력 -->
+                            <div class="box_aside">
+                                <table
+                                    class="tt-calendar"
+                                    cellpadding="0"
+                                    cellspacing="1"
+                                    style="width: 100%; table-layout: fixed"
+                                >
+                                    <caption class="cal_month">
+                                        <a
+                                            href="/archive/202212"
+                                            title="1개월 앞의 달력을 보여줍니다."
+                                            >«</a
+                                        >
+                                        &nbsp;
+                                        <a
+                                            href="/archive/202301"
+                                            title="현재 달의 달력을 보여줍니다."
+                                            >2023/01</a
+                                        >
+                                        &nbsp;
+                                        <a
+                                            href="/archive/202302"
+                                            title="1개월 뒤의 달력을 보여줍니다."
+                                            >»</a
+                                        >
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th class="cal_week2">일</th>
+                                            <th class="cal_week1">월</th>
+                                            <th class="cal_week1">화</th>
+                                            <th class="cal_week1">수</th>
+                                            <th class="cal_week1">목</th>
+                                            <th class="cal_week1">금</th>
+                                            <th class="cal_week1">토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cal_week cal_current_week">
+                                            <td
+                                                class="
+                                                    cal_day
+                                                    cal_day3
+                                                    cal_day_sunday
+                                                "
+                                            >
+                                                1
+                                            </td>
+                                            <td class="cal_day cal_day3">2</td>
+                                            <td class="cal_day cal_day3">3</td>
+                                            <td class="cal_day cal_day3">4</td>
+                                            <td class="cal_day cal_day3">5</td>
+                                            <td class="cal_day cal_day3">6</td>
+                                            <td class="cal_day cal_day3">7</td>
+                                        </tr>
+                                        <tr class="cal_week">
+                                            <td
+                                                class="
+                                                    cal_day
+                                                    cal_day3
+                                                    cal_day_sunday
+                                                "
+                                            >
+                                                8
+                                            </td>
+                                            <td class="cal_day cal_day3">9</td>
+                                            <td class="cal_day cal_day3">10</td>
+                                            <td class="cal_day cal_day3">11</td>
+                                            <td class="cal_day cal_day3">12</td>
+                                            <td class="cal_day cal_day3">
+                                                <a
+                                                    href="/archive/20230113"
+                                                    class="cal_click"
+                                                    >13</a
+                                                >
+                                            </td>
+                                            <td class="cal_day cal_day3">14</td>
+                                        </tr>
+                                        <tr class="cal_week">
+                                            <td
+                                                class="
+                                                    cal_day
+                                                    cal_day3
+                                                    cal_day_sunday
+                                                "
+                                            >
+                                                15
+                                            </td>
+                                            <td class="cal_day cal_day3">16</td>
+                                            <td class="cal_day cal_day4">17</td>
+                                            <td class="cal_day cal_day3">18</td>
+                                            <td class="cal_day cal_day3">19</td>
+                                            <td class="cal_day cal_day3">20</td>
+                                            <td class="cal_day cal_day3">21</td>
+                                        </tr>
+                                        <tr class="cal_week">
+                                            <td
+                                                class="
+                                                    cal_day
+                                                    cal_day3
+                                                    cal_day_sunday
+                                                "
+                                            >
+                                                22
+                                            </td>
+                                            <td class="cal_day cal_day3">23</td>
+                                            <td class="cal_day cal_day3">24</td>
+                                            <td class="cal_day cal_day3">25</td>
+                                            <td class="cal_day cal_day3">26</td>
+                                            <td class="cal_day cal_day3">27</td>
+                                            <td class="cal_day cal_day3">28</td>
+                                        </tr>
+                                        <tr class="cal_week">
+                                            <td
+                                                class="
+                                                    cal_day
+                                                    cal_day3
+                                                    cal_day_sunday
+                                                "
+                                            >
+                                                29
+                                            </td>
+                                            <td class="cal_day cal_day3">30</td>
+                                            <td class="cal_day cal_day3">31</td>
+                                            <td class="cal_day1 cal_day2"></td>
+                                            <td class="cal_day1 cal_day2"></td>
+                                            <td class="cal_day1 cal_day2"></td>
+                                            <td class="cal_day1 cal_day2"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 글 보관함 -->
+                            <div class="box_aside lst">
+                                <strong>글 보관함</strong>
+                                <ul class="list_keep">
+                                    <li>
+                                        <a
+                                            href="/archive/202301"
+                                            class="link_keep"
+                                            >2023/01</a
+                                        >
+                                        (1)
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/archive/202212"
+                                            class="link_keep"
+                                            >2022/12</a
+                                        >
+                                        (6)
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/archive/202209"
+                                            class="link_keep"
+                                            >2022/09</a
+                                        >
+                                        (1)
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/archive/202208"
+                                            class="link_keep"
+                                            >2022/08</a
+                                        >
+                                        (2)
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/archive/202207"
+                                            class="link_keep"
+                                            >2022/07</a
+                                        >
+                                        (4)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hide" />
+            <div id="dkFoot" role="contentinfo" class="area_foot">
+                Blog is powered by
+                <em class="emph_t">Tistory</em> / Designed by
+                <em class="emph_t">Tistory</em>
+            </div>
+        </div>
+
+        <script src="https://tistory1.daumcdn.net/tistory/3885386/skin/images/script.js?_version_=1630791781"></script>
+        <script>
+            (function ($) {
+                $.Area.init();
+            })(jQuery);
+        </script>
+
+        <div class="#menubar menu_toolbar">
+            <h2 class="screen_out">티스토리툴바</h2>
+        </div>
+        <div class="#menubar menu_toolbar"></div>
+        <iframe
+            id="editEntry"
+            style="
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                left: -100px;
+                top: -100px;
+            "
+            src="//nadocoding.tistory.com/api"
+        ></iframe>
+
+        <!-- DragSearchHandler - START -->
+        <script src="//search1.daumcdn.net/search/statics/common/js/g/search_dragselection.min.js"></script>
+
+        <!-- DragSearchHandler - END -->
+
+        <!-- SyntaxHighlight - START -->
+        <link
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/styles/atom-one-light.min.css"
+            rel="stylesheet"
+        />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/highlight.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/delphi.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/php.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/python.min.js"></script>
+        <script
+            src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/r.min.js"
+            defer
+        ></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/ruby.min.js"></script>
+        <script
+            src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/scala.min.js"
+            defer
+        ></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/shell.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/sql.min.js"></script>
+        <script
+            src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/swift.min.js"
+            defer
+        ></script>
+        <script
+            src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/typescript.min.js"
+            defer
+        ></script>
+        <script
+            src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/vbnet.min.js"
+            defer
+        ></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+
+        <!-- SyntaxHighlight - END -->
+
+        <script>
+            window.tiara = {
+                svcDomain: 'user.tistory.com',
+                section: '홈',
+                trackPage: '홈_보기',
+                page: '홈',
+                key: '3885386',
+                customProps: {
+                    userId: '0',
+                    blogId: '3885386',
+                    entryId: 'null',
+                    role: 'guest',
+                    filterTarget: false,
+                    trackPage: '홈_보기',
+                },
+                entry: null,
+                kakaoAppKey: '3e6ddd834b023f24221217e370daed18',
+                appUserId: 'null',
+            };
+        </script>
+        <script
+            type="text/javascript"
+            src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/script/tiara.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function ($) {
+                $(document).ready(function () {
+                    lightbox.options.fadeDuration = 200;
+                    lightbox.options.resizeDuration = 200;
+                    lightbox.options.wrapAround = false;
+                    lightbox.options.albumLabel = '%1 / %2';
+                });
+            })(tjQuery);
+        </script>
+        <div
+            style="
+                 {
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    background: none;
+                    float: none;
+                    clear: none;
+                    z-index: 0;
+                }
+            "
+        ></div>
+        <script
+            type="text/javascript"
+            src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/script/common.js"
+        ></script>
+        <script type="text/javascript">
+            window.roosevelt_params_queue = window.roosevelt_params_queue || [
+                { channel_id: 'dk', channel_label: '{tistory}' },
+            ];
+        </script>
+        <script
+            type="text/javascript"
+            src="//t1.daumcdn.net/midas/rt/dk_bt/roosevelt_dk_bt.js"
+            async="async"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-ce2b1cf88ca4f3e019bc6a3b9c241e836905a98e/static/script/menubar.min.js"
+        ></script>
+        <script>
+            (function (win, doc, src) {
+                win.Wpm =
+                    win.Wpm ||
+                    function (name, param) {
+                        win.Wpm.queue = win.Wpm.queue || [];
+                        const { queue } = win.Wpm;
+                        queue.push([name, param]);
+                    };
+                const script = doc.createElement('script');
+                script.src = src;
+                script.async = 1;
+                const [elem] = doc.getElementsByTagName('script');
+                elem.parentNode.insertBefore(script, elem);
+            })(window, document, 'https://t1.kakaocdn.net/malibu_prod/wpm.js');
+            const APP_KEY = 'd3cda7e82e6e4144bdc998b8e25f125d';
+            Wpm('appKey', APP_KEY);
+        </script>
+    </body>
+</html>
